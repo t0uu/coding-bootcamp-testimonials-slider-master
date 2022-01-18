@@ -92,6 +92,48 @@ body {
     text-align: center;
     font-size: 12px;
     }
+    @media(max-width:411px){
+      body{
+        background-position-x: 10px;
+        background-position-y: 10px;
+        background-repeat: no-repeat;
+        background-size:contain;
+      }
+      .Ond{
+        background-position-y: 100px;
+        width: 200px;
+        height: 100px;
+      }
+      .container{
+        display: flex;
+        flex-direction: column-reverse;
+        .ImgCenter{
+          .user{
+          width: 300px;
+          right: 0;
+        }
+       }
+    
+        .containerText{
+          margin: 0.5rem;
+          left: 0px;
+          h3{
+            font-size: 16px;
+            text-align: center;
+          }
+          .text{
+            text-align: center;
+          }
+        }
+        .Btns{
+          left: 0;
+          top: -10px;
+        }
+      }
+      .attribution{
+        margin: 1.4rem;
+      }
+    }
     @media(max-width:375px){
   body{
     background-position-x: 10px;

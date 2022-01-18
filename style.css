@@ -113,6 +113,51 @@ body {
   font-size: 12px;
 }
 
+@media (max-width: 411px) {
+  body {
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .Ond {
+    background-position-y: 100px;
+    width: 200px;
+    height: 100px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .ImgCenter .user {
+    width: 300px;
+    right: 0;
+  }
+  .container .containerText {
+    margin: 0.5rem;
+    left: 0px;
+  }
+  .container .containerText h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .container .containerText .text {
+    text-align: center;
+  }
+  .container .Btns {
+    left: 0;
+    top: -10px;
+  }
+  .attribution {
+    margin: 1.4rem;
+  }
+}
+
 @media (max-width: 375px) {
   body {
     background-position-x: 10px;
