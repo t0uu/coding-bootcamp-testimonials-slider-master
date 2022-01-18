@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+
+:root{
+  --Dark-Blue: hsl(240, 38%, 20%);
+--Grayish-Blue: hsl(240, 18%, 77%);
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/pattern-bg.svg);  
+  background-position-x: 600px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  background-size:auto;
+  font-family: 'Inter', sans-serif;
+}
+.Ond{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/pattern-curve.svg);
+    background-position-y: 500px;
+    width: 670px;
+    height: 650px;
+    position: absolute;
+    z-index: -1;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .containerText{
+      background-image: url(/images/pattern-quotes.svg);
+      background-repeat: no-repeat;
+      background-position-x: 100px;
+      background-position-y: -20px;
+      position: relative;
+      left: 120px;
+      z-index: 1;
+      margin: 2%;
+      padding: 1rem;
+      h3{
+        color: var(--Dark-Blue);
+        font-weight: 300;
+        font-size: 32px;
+      }
+      p{
+        margin: 1rem;
+        font-size: 18px;
+        b{
+          margin: 15px;
+        }
+        small{
+          color: var(--Grayish-Blue);
+        }
+      }
+    }
+    .ImgCenter{
+      margin: 1rem;
+    .user{
+      width: 500px;
+      position: relative;
+      right: 100px;
+      top: 30px;
+      border-radius: 10px;
+      box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.15);
+    }
+  }
+    .Btns{
+      display: flex;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.15);
+      position: relative;
+      top: 270px;
+      left: 50px;
+      z-index: 2;
+      a{
+        margin: 1rem;
+        img{
+          width: 10px;
+        }
+      }
+    }
+    
+    
+  }
+    .attribution{
+    margin: 3.4rem;
+    text-align: center;
+    font-size: 12px;
+    }
+    @media(max-width:375px){
+  body{
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    background-size:contain;
+  }
+  .Ond{
+    background-position-y: 100px;
+    width: 200px;
+    height: 100px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    .ImgCenter{
+      .user{
+      width: 300px;
+      right: 0;
+    }
+   }
+
+    .containerText{
+      margin: 0.5rem;
+      left: 0px;
+      h3{
+        font-size: 16px;
+        text-align: center;
+      }
+      .text{
+        text-align: center;
+      }
+    }
+    .Btns{
+      left: 0;
+      top: -10px;
+    }
+  }
+  .attribution{
+    margin: 1.4rem;
+  }
+}
